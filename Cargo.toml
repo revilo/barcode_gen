@@ -1,0 +1,14 @@
+[package]
+name = "barcode_gen"
+version = "1.0.0"
+authors = ["Oliver Dick <oliver.dick@evilstorm.de>"]
+description = "A simple command-line utility to generate barcodes utilizing the barcoders library"
+homepage = "https://github.com/revilo/barcode_gen"
+repository = "https://github.com/revilo/barcode_gen"
+readme = "README.md"
+keywords = ["barcode", "barcodes", "barcode-encoding"]
+license = "Apache-2.0/MIT"
+
+[dependencies]
+barcoders = {version = "0.9.0", features = ["image", "svg"]}
+clap = "2.25.0"
