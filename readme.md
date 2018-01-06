@@ -4,6 +4,9 @@
 
 **barcode_gen** is a command-line utility to generate barcodes as PNG, GIF or SVG.
 
+This software uses the Rust library _Barcoders_ as a backend.
+Please see https://github.com/buntine/barcoders for further information.
+
 ## Installation
 
 At the moment there is no setup procedure available. Just copy the corresponding binary and run it.
@@ -23,40 +26,35 @@ barcode_gen [OPTIONS] <TEXT-TO-ENCODE>
 
 | Flag                     | Description                      |
 |--------------------------|----------------------------------|
-| -h, --help               | Prints help information          |
-| -V, --version            | Prints version information       |
+| `-h, --help`             | Prints help information          |
+| `-V, --version`          | Prints version information       |
 
 ### Options
 
 | Option                   | Description                      |
 |--------------------------|----------------------------------|
-| -f, --file <FILENAME>    | Specifies the file to write to (if not given, STDOUT is used)          | 
-| --height <PIXELS>        | Specifies the height of the output image in pixels [default: 80]       |
-| -o, --output <OUTPUT_FORMAT>    | Specifies which output format to use [default: PNG]             |
-| --savespace <NUM_NARROW_BARS>   | Specifies that an empty 'save space' on the left and the right of the barcode should be added [default: 0]     |
-| -t, --type <BARCODE_TYPE>       | Specifies which barcode type to generate [default: EAN13]       |
-| --xdim <DIM>             | Specifies the width of the 'narrow' bars in pixels [default: 1]        |
+| `-f, --file <FILENAME>`  | Specifies the file to write to (if not given, STDOUT is used)          | 
+| `--height <PIXELS>`      | Specifies the height of the output image in pixels [default: 80]       |
+| `-o, --output <OUTPUT_FORMAT>`  | Specifies which output format to use [default: PNG]             |
+| `--savespace <NUM_NARROW_BARS>` | Specifies that an empty 'save space' on the left and the right of the barcode should be added [default: 0]     |
+| `-t, --type <BARCODE_TYPE>`     | Specifies which barcode type to generate [default: EAN13]       |
+| `--xdim <DIM>`           | Specifies the width of the 'narrow' bars in pixels [default: 1]        |
 
 ### Arguments
 
-| Argument           | Description                          |
-|--------------------|--------------------------------------|
-| <TEXT-TO-ENCODE>   | Specifies the text to encode         | 
+| Argument            | Description                          |
+|---------------------|--------------------------------------|
+| `<TEXT-TO-ENCODE>`  | Specifies the text to encode         | 
 
 ## Supported barcode types
 
 Supported barcode types are:
-EAN13, EAN8, CODE39, CODE93, CODE11, CODE128, CODABAR, ITF (2 of 5 Interleaved), STF (2 of 5 Standard).
+`EAN13`, `EAN8`, `CODE39`, `CODE93`, `CODE11`, `CODE128`, `CODABAR`, `ITF` (2 of 5 Interleaved), `STF` (2 of 5 Standard).
 
 ## Supported output formats
 
 Supported output formats are:
-PNG, GIF, SVG
-
-## Backend usage
-
-This software uses the Rust library **Barcoders** as a backend.
-Please see https://github.com/buntine/barcoders for further information.
+`PNG`, `GIF`, `SVG`
 
 ## License
 
