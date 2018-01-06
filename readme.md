@@ -1,4 +1,5 @@
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE-MIT)
+[![Apache licensed](https://img.shields.io/badge/license-Apache2.0-green.svg)](./LICENSE-APACHE)
 
 # barcode_gen
 
