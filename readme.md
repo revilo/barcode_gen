@@ -6,10 +6,12 @@
 
 ## Installation
 
-Pre-compiled binaries exist for Linux x86 (64-bit) and Windows 7 (64-bit):
-You'll find them under https://github.com/revilo/barcode_gen/releases/tag/v1.0-beta
-
 At the moment there is no setup procedure available. Just copy the corresponding binary and run it.
+
+| Binary      | Version              | Description                      |
+|-------------|----------------------|----------------------------------|
+| [barcode_gen](https://github.com/revilo/barcode_gen/releases/download/v1.0-beta/barcode_gen)   | v1.0.0-beta | Binary for Linux x86-64  |
+| [barcode_gen.exe](https://github.com/revilo/barcode_gen/releases/download/v1.0-beta/barcode_gen.exe)   | v1.0.0-beta | Binary for Windows 7 x86 (64 bit)  |
 
 ## Usage
 
@@ -19,11 +21,15 @@ barcode_gen [OPTIONS] <TEXT-TO-ENCODE>
 
 ### Flags
 
+| Flag                     | Description                      |
+|--------------------------|----------------------------------|
 | -h, --help               | Prints help information          |
 | -V, --version            | Prints version information       |
 
 ### Options
 
+| Option                   | Description                      |
+|--------------------------|----------------------------------|
 | -f, --file <FILENAME>    | Specifies the file to write to (if not given, STDOUT is used)          | 
 | --height <PIXELS>        | Specifies the height of the output image in pixels [default: 80]       |
 | -o, --output <OUTPUT_FORMAT>    | Specifies which output format to use [default: PNG]             |
@@ -33,6 +39,8 @@ barcode_gen [OPTIONS] <TEXT-TO-ENCODE>
 
 ### Arguments
 
+| Argument           | Description                          |
+|--------------------|--------------------------------------|
 | <TEXT-TO-ENCODE>   | Specifies the text to encode         | 
 
 ## Supported barcode types
