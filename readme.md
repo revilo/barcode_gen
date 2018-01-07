@@ -30,7 +30,7 @@ barcode_gen [OPTIONS] <TEXT-TO-ENCODE>
 | `-f, --file <NAME>`      | Specifies the file to write to (if not given, STDOUT is used)          | 
 | `--height <PIXELS>`      | Specifies the height of the output image in pixels [default: 80]       |
 | `-o, --output <FORMAT>`  | Specifies which output format to use [default: PNG]             |
-| `--savespace <COUNT>`    | Specifies the number of narrow bars on the left and the right of the barcode (so called 'save space') [default: 0]       |
+| `--savespace <SIZE>`     | Specifies the size of the empty 'save space' on left and right of the barcode given in number of narrow bars [default: 0]       |
 | `-t, --type <BARCODE>`   | Specifies which barcode type to generate [default: EAN13]       |
 | `--xdim <DIM>`           | Specifies the width of the 'narrow' bars in pixels [default: 1]        |
 | `<TEXT-TO-ENCODE>`       | Specifies the text to encode         | 
