@@ -45,6 +45,24 @@ Supported barcode types are:
 Supported output formats are:
 `PNG`, `GIF`, `SVG`
 
+## Examples
+
+Example: EAN13, PNG file
+```
+./barcode_gen 0000123456789 --file EAN13_0000123456789.png
+```
+
+Example: EAN8, save space, narrow bars witdh of 3 pixels, PNG file
+```
+./barcode_gen 12345678 --type EAN8 --file EAN8_12345678.png --savespace 10 --xdim 3
+```
+
+Example: CODE128, save space, narrow bars witdh of 3 pixels, PNG file
+```
+./barcode_gen "ÀBARCODE" --type CODE128 --file CODE128_BARCODE.png --savespace 10 --xdim 3
+```
+(À indicates a switch to codepage A) 
+
 ## License
 
 Licensed under either of
